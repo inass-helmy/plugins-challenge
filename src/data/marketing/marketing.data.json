@@ -1,0 +1,16 @@
+{
+  "title": "Marketing",
+  "icon": "icon-marketing",
+  "active": [
+    "plugin1",
+    "plugin2",
+    "plugin4"
+  ],
+  "disabled": [
+    "plugin3"
+  ],
+  "inactive": [
+    "plugin5",
+    "plugin6"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "title": "Finance",
+  "icon": "icon-finance",
+  "active": [
+    "plugin7",
+    "plugin8"
+  ],
+  "disabled": [
+    "plugin9"
+  ],
+  "inactive": [
+    "plugin10"
+  ]
+}

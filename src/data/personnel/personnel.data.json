@@ -1,0 +1,13 @@
+{
+  "title": "Personnel",
+  "icon": "icon-people",
+  "active": [
+    "plugin11"
+  ],
+  "disabled": [
+    "plugin12"
+  ],
+  "inactive": [
+    "plugin13"
+  ]
+}
