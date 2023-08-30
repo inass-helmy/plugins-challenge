@@ -1,18 +1,24 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Navigation.styles.css";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import { useState } from "react";
 
 function Navigation({ onDisableHandler }) {
   const [isDisabled, setIsDisabled] = useState(false);
+
+  const navigation = useNavigate();
+
   const handleToggleChange = () => {
     setIsDisabled(!isDisabled);
     onDisableHandler(isDisabled);
   };
 
+  const handleHomePageDirect = () => {
+    navigation("/");
+  };
   return (
     <nav className='navigation-wrapper'>
-      <h1>
+      <h1 onClick={handleHomePageDirect}>
         <span>Data</span>Guard
       </h1>
       <NavLink to='/marketing'>Marketing</NavLink>
