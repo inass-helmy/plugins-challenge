@@ -4,5 +4,5 @@
   grid-auto-rows: max-content;
   max-width: 100%;
   gap: 30px 30px;
-
+  padding-bottom: 2em;
 }
