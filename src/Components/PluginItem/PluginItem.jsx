@@ -8,13 +8,12 @@ function PluginItem({ title, description, toggleSwitchStatus, isDisabled, onTogg
     inactive: "Blocked",
   };
 
-  const [statusWord, setStatusWord] = useState(statusWordMapping[toggleSwitchStatus]);
+  const [statusWord, setStatusWord] = useState(toggleSwitchStatus);
 
   const handler = (status) => {
     setStatusWord(status);
     onToggleHandler(status);
   };
-
   return (
     <div className={`pluginItem-card ${isDisabled && "disable"}`}>
       <div className='header-container'>
