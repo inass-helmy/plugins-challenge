@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navigation from "./Components/Navigation/index";
 import Marketing from "./Containers/Marketing/Marketing";
 import Finance from "./Containers/Finance/Finance";
@@ -18,7 +18,7 @@ function App() {
       <Router>
         <Navigation onDisableHandler={handleToggleAllPlugins} />
         <Routes>
-          <Route path='/' element={<Marketing isAllPluginsDisabled={isAllPluginsDisabled} />} />
+          <Route exact path='/' Component={() => <Navigate to='/marketing' />} />
           <Route
             path='/marketing'
             element={<Marketing isAllPluginsDisabled={isAllPluginsDisabled} />}
