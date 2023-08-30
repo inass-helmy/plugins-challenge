@@ -1,7 +1,7 @@
 .pluginItem-card {
   width: auto;
   height: auto;
-  border: 3px solid #eeeeeeb7;
+  border: 2px solid #d9d8d8e3;
   border-radius: 8px;
   background-color: #ffffff;
   padding-inline: 16px;
@@ -11,7 +11,7 @@
   >p {
     width: 90%;
     margin-top: 5px;
-    color: #95999d;
+    color: #909498;
   }
 }
 
@@ -44,6 +44,7 @@
   justify-content: space-between;
 
   >h4 {
-    font-weight: normal;
+    font-weight: 500;
+    color: black;
   }
 }
